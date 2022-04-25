@@ -4,97 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loja TOP</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Loja Top</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
   </head>
   <body>
-
     <header>
-        <nav>
-
-            <h1>Loja Top</h1>
-            <ul>
-              <a href="#categories"><li>Categorias</li></a>
-              <a href="#titles"><li>Títulos</li></a>
-              <a href="#about"><li>Sobre nós</li></a>
-            </ul>
-
-        </nav>
+      <nav class="nav-main">
+        <h1 class="nav-brand">Loja Top</h1>
+        <ul class="menu-items">
+          <li><a href="#categories">Categorias</a></li>
+          <li><a href="#titles">Títulos</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+        </ul>
+      </nav>
     </header>
-
     <main>
-
-        <section id="categories">
-            <h2>Categorias</h2>
-              <ul>
-                   <a href=""><li>Fantasia</li></a>
-                   <a href=""><li>Educação</li></a>
-              </ul>
-        </section>
-
-
-        <section id="titles">
-            <h2>Títulos</h2>
-
-            <div>
-                <img src="img/book1.jpg" alt="Livro Senhor dos Anéis" />
-                <div>
-                    <h3>O Senhor dos Anéis</h3>
-                    <p>Navegue por essa grande aventura</p>
-                    <p><span>R$</span> 389.99</p>
-                </div>
-            </div>
-
-            <div>
-                <img src="img/book2.jpg" alt="Livro Rails for dummies" />
-                <div>
-                    <h3>Rails For Dummies</h3>
-                    <p>Aprenda está fantástica ferramenta</p>
-                    <p><span>R$</span> 250.49</p>
-                </div>
-            </div>
-
-        </section>
-
-
-        <section id="about">
-            <h2>Sobre nós</h2>
-            <h3>O que fazemos</h3>
-            <p>Ajudamos a se tornarem desenvolvedores profissionais</p>
-            <h3>Saiba mais</h3>
-        
-            <iframe
-              width="320"
-              height="180"
-              src="https://www.youtube.com/embed/6PBJUxIiRBI"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-        </section>
-
+      <section id="categories" class="section-categories">
+        <h2>Categorias</h2>
+        <ul class="categories-list">
+          <li>Fantasia</li>
+          <li>Educação</li>
+        </ul>
+      </section>
+      <section id="titles" class="section-titles">
+        <h2>Títulos</h2>
+        <div class="title-card">
+          <img class="title-card-img" src="img/book1.jpg" alt="O senhor dos anéis" />
+          <div class="title-card-description">
+            <h3>O senhor dos anéis</h3>
+            <p>Navegue por essa grande aventura</p>
+            <p class="title-price"><span>R$ </span>389.99</p>
+          </div>
+        </div>
+        <div class="title-card">
+          <img class="title-card-img" src="img/book2.jpg" alt="Rails for dummies" />
+          <div class="title-card-description">
+            <h3>Rails for dummies</h3>
+            <p>Aprenda esta fantástica ferramenta</p>
+            <p class="title-price"><span>R$ </span>250.49</p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section-about">
+        <h2>Sobre nós</h2>
+        <h3>O que fazemos</h3>
+        <p>Ajudamos pessoas a se tornarem desenvolvedores profissionais</p>
+        <h3>Saiba mais</h3>
+        <iframe
+          width="320"
+          height="180"
+          src="https://www.youtube.com/embed/6PBJUxIiRBI"
+          frameborder="0"
+          allowfullscreen
+          >Lalala</iframe
+        >
+      </section>
     </main>
-
     <footer>
+      <div class="footer-content">
         <div>
-            <div>
-                <h2>Siga-nos</h2>
-                <ul>
-                    <a href="https://www.linkedin.com/in/gabrielviana9/"><li>Linkedin</li></a>
-                    <a href="https://www.instagram.com/gabrielviana_9/"><li>Instagram</li></a>
-                </ul>
-            </div>
-
-            <div>
-                <h2>Entre em contato</h2>
-                <address>
-                Escreva para nosso <a href="mailto:gabrielviana.fcb9@gmail.com">Email</a>. 
-                <br> Até a próxima.
-                </address>
-            </div>
-    </div>
+          <h2>Siga-nos</h2>
+          <a href="https://www.linkedin.com/in/gabrielviana9/">Linkedin</a>
+          <br>
+          <a href="https://www.instagram.com/gabrielviana_9/">Instagram</a>
+        </div>
+        <div>
+          <h2>Entre em contato</h2>
+          <address>
+            Escreva para nosso <a href="gabrielviana.fcb9@gmail.com">email</a>.<br>
+            Até a próxima!
+          </address>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>
